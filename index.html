@@ -1,0 +1,64 @@
+<html>
+    <head><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.css">
+        <link rel="stylesheet" href="index.css">
+    </head>
+    <body>
+        <div class="container">
+            <div class="main">
+                <div class="section-home">
+                    <h3 class="team">HOME</h3>
+                    <div class="score-box">
+                        <p class="score" id="score-home"></p>
+                    </div>
+                    <div class="points-box">
+                        <button class="btn-points" onclick="increment1Home()">+1</button>
+                        <button class="btn-points" onclick="increment2Home()">+2</button>
+                        <button class="btn-points" onclick="increment3Home()">+3</button>
+                    </div>
+                </div>
+                <div class="section-guest">
+                    <h3 class="team">GUEST</h3>
+                    <div class="score-box">
+                        <p class="score" id="score-guest"></p>
+                    </div>
+                    <div class="points-box">
+                        <button class="btn-points" onclick="increment1Guest()">+1</button>
+                        <button class="btn-points" onclick="increment2Guest()">+2</button>
+                        <button class="btn-points" onclick="increment3Guest()">+3</button>
+                    </div>
+                </div>
+            </div>
+            <div class="section-fouls">
+                <div>
+                    <h3>fouls</h3>
+                    <p id="foul-home"></p>
+                    <div>
+                        <button class="btn-points" onclick="increment1Foul()">+</button>
+                        <button class="btn-points" onclick="decline1Foul()">-</button>
+                    </div>
+                </div>
+                <div>
+                    <h3>quarter</h3>
+                    <p id="time-el"></p>
+                    <div>
+                        <button class="btn-points" onclick="incrementTime()">+</button>
+                        <button class="btn-points" onclick="declineTime()">-</button>
+                    </div>
+                </div>
+                <div>
+                    <h3>fouls</h3>
+                    <p id="foul-guest"></p>
+                    <div>
+                        <button class="btn-points" onclick="increment2Foul()">+</button>
+                        <button class="btn-points" onclick="decline2Foul()">-</button>
+                    </div>
+                </div>
+            </div>
+            <div class="section-new-game">
+                <button class="reset-btn" onclick="resetAll()">Start new game</button>
+
+            </div>
+        </div>
+        <script src="index.js"></script>
+    </body>
+</html>
